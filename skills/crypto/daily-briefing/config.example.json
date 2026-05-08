@@ -1,0 +1,74 @@
+{
+  "email": {
+    "to": "your@email.com",
+    "smtp": {
+      "host": "smtp.163.com",
+      "port": 465,
+      "user": "your@163.com",
+      "pass": "your-smtp-password"
+    }
+  },
+  "schedule": {
+    "cron": "0 8 * * *",
+    "timezone": "Asia/Shanghai",
+    "description": "每天早上8点北京时间"
+  },
+  "watchlist": {
+    "coins": [
+      "bitcoin", "ethereum", "solana", "bnb", "xrp",
+      "cardano", "avalanche-2", "polkadot", "chainlink", "arbitrum",
+      "optimism", "polygon", "uniswap", "aave", "render-token",
+      "fetch-ai", "dogecoin", "pepe", "ondo-finance", "maker"
+    ],
+    "sectors": {
+      "defi": ["uniswap", "aave", "maker", "lido-dao", "curve-dao-token"],
+      "layer2": ["arbitrum", "optimism", "polygon", "starknet", "zksync"],
+      "ai": ["render-token", "fetch-ai", "ocean-protocol", "singularitynet"],
+      "meme": ["dogecoin", "shiba-inu", "pepe", "floki", "bonk"],
+      "rwa": ["ondo-finance", "maker", "centrifuge", "maple"],
+      "nft": ["apecoin", "blur", "immutable-x"]
+    }
+  },
+  "preferences": {
+    "language": "zh-CN",
+    "include_technical_analysis": true,
+    "include_macro": true,
+    "include_onchain": true,
+    "include_news": true,
+    "risk_tolerance": "medium",
+    "detail_level": "full"
+  },
+  "alert": {
+    "enabled": true,
+    "btc_change_threshold": 10,
+    "alt_change_threshold": 20,
+    "fear_greed_extreme_low": 10,
+    "fear_greed_extreme_high": 90
+  },
+  "data_sources": {
+    "primary": {
+      "market": "coingecko",
+      "onchain_btc": "blockchain.info",
+      "onchain_eth": "etherscan",
+      "defi": "defillama",
+      "sentiment": "alternative.me"
+    },
+    "fallback": {
+      "market": "coincap",
+      "onchain_eth": "blockscout"
+    },
+    "news": {
+      "english": [
+        "https://www.coindesk.com/arc/outboundfeeds/rss/",
+        "https://cointelegraph.com/rss",
+        "https://www.theblock.co/rss.xml"
+      ],
+      "chinese": [
+        "https://www.jinse.cn",
+        "https://www.panewslab.com",
+        "https://www.theblockbeats.info",
+        "https://foresightnews.pro"
+      ]
+    }
+  }
+}
